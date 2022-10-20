@@ -33,7 +33,7 @@
 
   <div class="my-5">
     <%= form.label :Contact %>
-    <%= form.text_field :contact, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full", :required => true %>
+    <input type="contact" name="contact" placeholder="123-456-678" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class= "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" required>
   </div>
 
   <div class="my-5">
