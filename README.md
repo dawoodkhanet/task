@@ -5,20 +5,17 @@ application up and running.
 
 Things you may want to cover:
 
+
 * Ruby version
 
-* System dependencies
+* Installing MySQL Database
 
-* Configuration
+* Configuration MySQL Database
 
-* Database creation
+* Install Tailwind CSS
 
-* Database initialization
+* bundle install
 
-* How to run the test suite
+* Database initialization 
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
