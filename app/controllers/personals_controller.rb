@@ -21,11 +21,13 @@ class PersonalsController < ApplicationController
 
   # POST /personals or /personals.json
   def create
+   
     @personal = Personal.new(personal_params)
-
+      @personal.email = params[:email]
+      @personal.contact = params[:contact]
     respond_to do |format|
       if @personal.save
-        format.html { redirect_to new_employment_url, notice: "Personal Information was successfully created." }
+        format.html { redirect_to new_employment_url, notice: "Information Successfully Saved"}
         format.json { render :show, status: :created, location: @personal }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -65,6 +67,6 @@ class PersonalsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def personal_params
-      params.require(:personal).permit(:first_name, :last_name, :nick_name, :email, :contact)
+      params.require(:personal).permit(:first_name, :last_name, :nick_name)
     end
 end

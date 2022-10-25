@@ -1,9 +1,9 @@
-
+<%= render 'layouts/notice' %>
 
 <%= form_with(model: personal, class: "contents") do |form| %>
   <% if personal.errors.any? %>
     <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
-      <h2><%= pluralize(personal.errors.count, "error") %> prohibited this personal from being saved:</h2>
+      <h2><%= pluralize(personal.errors.count, "error") %> prohibited this Information from being saved:</h2>
 
       <ul>
         <% personal.errors.each do |error| %>
@@ -12,6 +12,7 @@
       </ul>
     </div>
   <% end %>
+  
 
   <div class="my-5">
     <%= form.label :First_Name %>
@@ -30,11 +31,11 @@
 
   <div class="my-5">
     <%= form.label :Email_Address %>
-    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" / required class = "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full">
+    <input type="email" name = "email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" / required class = "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" required>
   </div>
 
   <div class="my-5">
-    <%= form.label :Contact %>
+    <%= form.label :Contact  %>
     <input type="contact" name="contact" placeholder="123-456-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class= "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" required>
   </div>
 

@@ -1,0 +1,17 @@
+<% flash.each do |msg_type, message| %>
+    <div id="alrt" class="alert alert-success alert-dismissible fade show" role="alert" style="z-index: 999">
+      <div class="container">
+        <button class="close" data-dismiss="alert"><span>×</span></button>
+        <%= message %>
+      </div>
+    </div>
+  
+    <style>
+      #alrt {
+        position: absolute;
+        border-radius: 0px 32px 0px;
+        background: linear-gradient(183deg,rgb(119 209 122), rgb(92 237 244));
+        margin: 80px 3px 0px 3px;
+      }
+    </style>
+  <% end %>

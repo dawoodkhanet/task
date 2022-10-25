@@ -21,6 +21,7 @@ class EmploymentsController < ApplicationController
 
   # POST /employments or /employments.json
   def create
+   
     @employment = Employment.new(employment_params)
 
     respond_to do |format|

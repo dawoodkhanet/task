@@ -18,4 +18,8 @@ Things you may want to cover:
 
 * Database initialization 
 
+* Run rspec
+
+
+
 
