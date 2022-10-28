@@ -77,3 +77,4 @@ end
 gem "tailwindcss-rails", "~> 2.0"
 gem 'pry'
 
+gem "faker", "~> 2.23"

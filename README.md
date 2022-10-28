@@ -5,21 +5,30 @@ application up and running.
 
 Things you may want to cover:
 
+* Ruby version(install ruby-3.0.0)
 
-* Ruby version
 
-* Installing MySQL Database
+* Rails version 7.0.4
 
-* Configuration MySQL Database
 
-* Install Tailwind CSS
+* MySQL Installation ( https://levelup.gitconnected.com/setting-up-mysql-with-ruby-on-rails-7-on-ubuntu-20-04-f6bbbb833db9)
 
-* bundle install
 
-* Database initialization 
+* MySQL command enter for new role with your username and password. 
+CREATE USER '<your_username>'@'localhost' IDENTIFIED BY '<your_password>';
+You can use username 'dawoodkhann678' and password '123456'.
 
-* Run rspec
 
+* Install all of the required gems using this command( bundle install)
+
+
+* run command rails db:create
+
+
+* run command rails db:migrate 
+
+
+* run command rspec
 
 
 
