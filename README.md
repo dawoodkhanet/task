@@ -18,6 +18,14 @@ Things you may want to cover:
 CREATE USER '<your_username>'@'localhost' IDENTIFIED BY '<your_password>';
 You can use username 'dawoodkhann678' and password '123456'.
 
+* Install Tailwind CSS (https://tailwindcss.com/docs/guides/ruby-on-rails)
+
+
+* ./bin/bundle add tailwindcss-rails
+
+
+* ./bin/rails tailwindcss:install
+
 
 * Install all of the required gems using this command( bundle install)
 
